@@ -1,0 +1,471 @@
+/*
+
+
+	
+	coklat gelap #523432
+	coklat muda  #896154
+*/
+body {
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	background: #f8eee4;
+    color: #523432;
+
+/*	color: #896154;*/
+    font-weight: 400;
+
+}
+h1, h2, h3, h4, h5 {
+	margin: .5em 0;
+    font-weight: 400;
+	color: #523432;
+    font-style: italic;
+/*	color: #7e9dae ;
+*/	}
+
+
+a {
+	color: #523432;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ba7a65;
+}
+
+h2 {
+	font-size: 1.8rem;
+    letter-spacing: .5px;
+    font-style: normal;
+    letter-spacing: 2px
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+h4 {
+	font-size: 1.2rem;
+}
+p {font-size: 1rem;
+	line-height: 1.5;
+	}
+
+
+.social.fixed {
+	position: absolute;
+	top:0;
+	right: 8%
+
+}
+
+@media only screen and (min-device-width : 768px)  { 
+	body.about {
+		/*right: 15%*/
+	}
+}
+	.social.fixed .wrapper {
+
+		position: relative;
+		height: 200px;
+		width: 41px;
+		padding: 0;
+		top: -110px;
+		transition: top .8s
+	}
+
+	.social.fixed:hover .wrapper {
+		top: 0;
+
+
+	}
+
+	.social .head {
+			width: 41px;
+			height: 88px;
+			background: url(social-head.png);
+			background: url(social-head-toska.png);
+
+
+	}
+
+	.social .content {
+			width: 41px;
+			height: 112px;
+			background: url(social-bg-toska.png);
+			
+
+	}
+
+
+.header {
+	height: 208px;
+	background: url(header-background.png) no-repeat;
+	text-align: center;
+}
+	.header .logo {
+		width: 320px;
+		height: 120px;
+		background: url(logo.png) no-repeat center;
+		background-size: contain;
+		display: inline-block;
+		margin: 20px 0 15px;
+	}
+
+.navigation {}
+	.navigation a {
+		line-height: 30px;
+		background: url(menu-background.png) center repeat-x;
+		height: 30px;
+		display: inline-block;
+		margin:0;
+		padding: 0 9px;
+		font-style: italic;
+		font-weight: 500
+	}
+
+.rendaTop {
+	height: 53px;
+	background: url(renda-atas.png);
+	margin-bottom: 20px;
+    z-index: 100;
+
+}
+
+.blog .rendaTop {
+	background: url(renda-atas-putih.png);
+}
+	
+
+.rendaBottom {
+	height: 53px;
+	background: url(renda-bawah.png);
+	margin-top: 20px;
+
+}
+
+
+.row.contentMain {}
+	.banner {
+		margin-bottom: 20px;
+
+	}
+
+	.history .wrapper,
+	.recent .wrapper {
+		padding: 15px;
+		margin-bottom: 20px;
+
+	}
+
+	.recent .wrapper {
+		background: url(home-kolom-pink-top.png) no-repeat;
+		background-size: cover;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		height: 100%
+
+	}
+
+	.recent h3, .history h3 {
+
+		font-size: 1.4rem 
+
+	} 
+
+	body .recent p, body .history p {
+		font-size: .9rem;
+		color: #111;
+	}
+	.recent h4 {
+		margin-bottom: 20px;
+		font-style: italic;
+		font-size: 1.7rem;
+	}
+		.recent  article {
+			margin: 10px  5px;
+			clear: both;
+		}
+			article:after {
+				content: "";
+				display: table;
+
+			}
+			.recent  article h4 {
+				font-style: italic;
+
+				}
+			.recent  article h3 {font-style: italic;}
+
+			.recent  article img {float: left; width: 27%}
+			.recent  article .text {margin-left: 32%;}
+
+	.history > .wrapper{
+		background: url(home-kolom-hijau.png);
+		background-size: contain;
+		width: 100%;
+		height: 100%;
+		min-height: 300px;
+		padding-top: 15%;
+
+	}
+
+	.history article img {
+
+		float: left;
+		margin-right: 15px;
+	}
+
+
+@media only screen and (min-width : 1025px)  { 
+	body.about {
+		background: url(about-background.jpg);
+		background-size: cover;
+	/*	background-attachment: fixed;
+	*/}
+}
+
+
+@media only screen and (min-width: 800px) {
+	body.about {
+		background-attachment: fixed;
+	}
+
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+	body.about {
+		/* background-attachment: scrool; */
+		background: #f8eee4;
+	}
+}
+
+
+body.about .contentMain{
+	min-height: 100%;
+	min-height: calc(100% - 280px);
+/*    margin-top: -50px;*/
+    z-index: 1;
+
+}
+	.content-about {
+		background: rgba(255,255,255, .7);
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	body.about h2 {
+		letter-spacing: 1px;
+		margin-top: 1em;
+
+	}
+
+body.product h2,
+body.product h3 {
+	font-style: normal;
+	text-align: center;
+	color: #333;
+
+}
+
+
+
+body.product .product-item {
+	margin-bottom: 2em;
+}
+
+body.product .medium-12 p {
+
+	max-width: 450px;
+	margin: 1em auto;
+}
+.openBox img {width: 100%;}
+
+
+
+
+body.blog {
+
+/*	background: url(bg_polkadot_blue_darker.png);
+	background: url(bg_polkadot_blue.jpg);*/
+	background-color: #E2F0F7;
+	background-image: url(polkadot.png);
+	background-size: 20%;
+	
+}
+
+body.blog article {
+
+	background-color: rgba(250, 250, 250, .8);
+	padding: 1rem;
+	margin-bottom: 2rem;
+
+}
+
+body.blog article img {
+	margin-bottom: 1em;
+}
+
+hr.end {
+	width: 100%;
+	border: 0;
+	height: 50px;
+	background: url(end.png) no-repeat center;
+	background: url(end-brown.png) no-repeat center;
+
+	background-size: contain;
+}
+
+
+footer {
+	background: url(footer-background.png);
+/*	height: 120px;
+*/	padding: 50px 20px 20px;
+	color: white;
+	background-color: background: #f8eee4;
+}
+
+
+.slider img {
+    width: 100%;
+}
+.slick-prev {
+left: 20px}
+
+.slick-next {
+right: 20px}
+
+
+.postcard {
+
+	max-width: 480px;
+	padding: 10px;
+	border: 1px solid rgba(250, 250, 250, .5);
+	margin: auto;
+	font-size: 1.2rem;
+}
+
+.postcard textarea {
+	width: 100%;
+	font-size: 1.2rem;
+	padding: .5rem;
+}
+.postcard label, .postcard input {
+	line-height: 1.8rem;
+	font-size: 1.2rem;
+
+
+}
+.postcard label {
+	width: 20%;
+	display: inline-block;
+
+}
+
+.postcard input {
+	width: 75%;
+
+}
+
+
+	.postcard input.submit {
+		width: 70%;
+		text-align: center;
+		margin-left: 23%;
+		font-family: 'Brush Script MT', cursive;
+
+
+	}
+.postcard .hide {
+	display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.postcard {
+		width: 768px;
+		height: 520px;
+		max-width: 768px;
+		background: url(postcard3.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		padding-top: 180px;
+
+
+	}
+
+	.postcard  h2 {display: none}
+
+	.postcard  .message, .postcard  .meta  {
+
+		float: left;
+		width: 50%;
+
+	}
+
+	.postcard  .message {
+		padding: 0px 40px 0 20px;
+
+
+	}
+	.postcard  .message textarea {
+		background: rgba(255,255,255, .2);
+		height: 280px;
+	}
+	.postcard  .meta {
+		padding: 70px 10px 0 10px;
+	}
+
+	.postcard  .meta input {
+		background: rgba(255,255,255, .2);
+		border: none;
+
+	}
+
+	.postcard .meta span {
+		display: block;
+		height: 44px;
+
+	}
+
+	.postcard .meta label {
+		visibility: hidden;
+	}
+
+	.postcard .meta input.submit {
+		background: none;
+		background: url("button-submit.png") no-repeat center;
+		background-size: contain;
+		width: 100%;
+		margin: 0;
+		text-indent: -200%;
+	}
+
+
+
+}
+
+
+
+
+/*
+     FILE ARCHIVED ON 12:01:03 Jan 22, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:31:28 Jan 06, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 242.944
+  exclusion.robots: 0.063
+  exclusion.robots.policy: 0.056
+  cdx.remote: 0.049
+  esindex: 0.007
+  LoadShardBlock: 114.757 (3)
+  PetaboxLoader3.datanode: 176.194 (5)
+  load_resource: 185.255 (2)
+  PetaboxLoader3.resolve: 76.693 (2)
+*/
